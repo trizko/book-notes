@@ -14,3 +14,9 @@ To compile and run the code, use the following command:
 gcc -o name_of_binary program_filename.c -Wall
 ./name_of_binary
 ```
+
+There are examples where the authors run the code as multiple processes at the same time with the `&` symbol. This assign a process identifier (PID) to each running program and run them in the "background". To exit all of these you, you must either, one by one, put the process in the foreground with the `fg` command and then ctrl-c out for each process or you can open another terminal window and use the `kill` command with a list of each PID you would like to terminate, like so:
+```bash
+kill 11111 11112 11113
+```
+The above command will send the signal `TERM` (terminate - this is what ctrl-c does when a process is in the foreground) to the processes `11111`, `11112`, and `11113`. You can specify which signal to send with the `-s` command but the `TERM` signal is usually the default.
