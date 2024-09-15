@@ -1,5 +1,16 @@
 # Chapter 02 - Introduction to Operating Systems
 
+# Notes (Reading)
+
 - The point of an OS is to create an environment that makes it easy to write programs against.
     - This is accomplished through creating interfaces for virtualization, concurrency, and persistence.
     - Those 3 concepts will be the cornerstone of the entire rest of the book.
+
+# Notes (Code)
+The code samples come with header files that are not natively on your operating system. They must be retrieved from either the tarball bundle or from the github repository found here: https://github.com/remzi-arpacidusseau/ostep-code/tree/master/intro
+
+To compile and run the code, use the following command:
+```bash
+gcc -o name_of_binary program_filename.c -Wall
+./name_of_binary
+```
