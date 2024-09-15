@@ -1,2 +1,2 @@
-# os-tep-notes
-Personal notes taken while reading Operating Systems: Three Easy Pieces
+# Notes on Operating Systems: Three Easy Pieces 
+Repo contains personal notes taken from book
